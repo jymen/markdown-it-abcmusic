@@ -1,0 +1,17 @@
+{
+  "name": "markdown-it-abcmusic",
+  "version": "0.0.1",
+  "description": "Abc music notation plugin for markdown-it ",
+  "keywords": [
+    "abc",
+    "music",
+    "markdown"
+  ],
+  "license": "ISC",
+  "author": "Jean-Yves Mengant",
+  "type": "commonjs",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
