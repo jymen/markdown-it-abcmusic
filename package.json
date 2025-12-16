@@ -29,9 +29,12 @@
   "type": "module",
   "main": "dist/index.js",
   "devDependencies": {
-    "@changesets/cli": "^2.29.8",
     "prettier": "^3.7.4",
     "typescript": "^5.9.3",
     "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "abcjs": "^6.5.2",
+    "markdown-it": "^14.1.0"
   }
 }

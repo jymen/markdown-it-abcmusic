@@ -9,7 +9,10 @@
     "moduleDetection": "force",
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
-
+    "checkJs": true,
+    "noImplicitAny": false,
+    "forceConsistentCasingInFileNames": true,
+    "strictNullChecks": true,
     /* Strictness */
     "strict": true,
     "noUncheckedIndexedAccess": true,
