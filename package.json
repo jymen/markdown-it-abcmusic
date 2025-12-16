@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-abcmusic",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Abc music notation plugin for markdown-it ",
   "keywords": [
     "abc",
