@@ -5,8 +5,8 @@
     "skipLibCheck": true,
     "target": "es2022",
     "allowJs": true,
-    "resolveJsonModule": true,
     "moduleDetection": "force",
+    "moduleResolution": "nodeNext",
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
     "checkJs": true,
@@ -14,22 +14,16 @@
     "forceConsistentCasingInFileNames": true,
     "strictNullChecks": true,
     /* Strictness */
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "noImplicitOverride": true,
-
-    /* If transpiling with TypeScript: */
-    "module": "NodeNext",
-    "outDir": "dist",
-    "rootDir": "src",
-    "sourceMap": true,
 
     /* AND if you're building for a library: */
     "declaration": true,
 
     /* AND if you're building for a library in a monorepo: */
     "declarationMap": true,
+    "outDir": "dist",
     // No access to DOM
     "lib": ["es2022"]
-  }
+  },
+  "include": ["src"],
+  "exclude": ["test", "vitest.config.ts", "node_modules"]
 }

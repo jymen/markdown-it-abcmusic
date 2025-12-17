@@ -1,13 +1,14 @@
-**markdown-it-abcmusic**
+# markdown-it-abcmusic
 
-::: abcmusic
+Render ABC music blocks in markdown using abcjs SVG.
 
-Abc music notation plugin for markdown-it
+CAVEAT : CODE COMPLETE : debug and optimization in progress
 
-sample
+## Usage
 
-:::abcmusic
-abc music notation here
-:::
+```ts
+import MarkdownIt from "markdown-it";
+import markdownItAbcMusic from "markdown-it-abcmusic";
 
-CAVEAT : WORK IN PROGRESS NOT OPERATIONAL YET
+const md = new MarkdownIt({ html: true });
+md.use(markdownItAbcMusic);

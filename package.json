@@ -1,11 +1,12 @@
 {
   "name": "markdown-it-abcmusic",
-  "version": "0.0.3",
-  "description": "Abc music notation plugin for markdown-it ",
+  "version": "0.0.4",
+  "description": "markdown-it plugin to render :::abc blocks using abcjs SVG",
   "keywords": [
-    "abc",
+    "markdown-it",
+    "abcjs",
     "music",
-    "markdown"
+    "svg"
   ],
   "license": "MIT",
   "author": "Jean-Yves Mengant",
@@ -29,12 +30,14 @@
   "type": "module",
   "main": "dist/index.js",
   "devDependencies": {
+    "@types/jsdom": "^27.0.0",
     "prettier": "^3.7.4",
     "typescript": "^5.9.3",
     "vitest": "^3.2.4"
   },
   "dependencies": {
     "abcjs": "^6.5.2",
+    "jsdom": "^27.0.1",
     "markdown-it": "^14.1.0"
   }
 }
