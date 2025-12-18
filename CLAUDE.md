@@ -9,39 +9,50 @@ This is a markdown-it plugin that renders ABC music notation blocks (:::abc...::
 ## Development Commands
 
 ### Build
+
 ```bash
 npm run build
 ```
+
 Builds the library and increments the patch version. Output goes to `dist/` directory.
 
 ### Development Watch Mode
+
 ```bash
 npm run dev
 ```
+
 Runs build in watch mode for active development.
 
 ### Testing
+
 ```bash
 npm test
 ```
+
 Runs Vitest tests. Test files are located in `src/test/**/*.test.ts`.
 
 ### Format Code
+
 ```bash
 npm run format          # Auto-format with Prettier
 npm run check-format    # Check formatting without modifying
 ```
 
 ### CI Verification
+
 ```bash
 npm run ci
 ```
+
 Runs build, format check, and tests - same as what would run in CI.
 
 ### Publishing
+
 ```bash
 npm run local-release
 ```
+
 Uses changesets to version and publish. The `prepublishOnly` hook automatically runs CI checks before publishing.
 
 ## Architecture
@@ -83,6 +94,7 @@ Uses changesets to version and publish. The `prepublishOnly` hook automatically 
 ### External Dependencies
 
 The following are marked as external in the build and expected to be provided by consumers:
+
 - `markdown-it`
 - `abcjs`
 - `jsdom`
@@ -97,6 +109,7 @@ The following are marked as external in the build and expected to be provided by
 ## Testing
 
 Tests use Vitest with Node environment. The test suite:
+
 - Creates a markdown-it instance with the plugin installed
 - Renders sample ABC notation
 - Verifies that SVG elements are present in the output
