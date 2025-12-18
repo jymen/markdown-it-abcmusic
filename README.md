@@ -9,7 +9,7 @@ Write ABC music notation in your markdown:
 ```markdown
 :::abc
 X:1
-T:Simple Melody
+T:Scale
 M:4/4
 L:1/4
 K:C
