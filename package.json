@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-abcmusic",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "markdown-it plugin to render :::abc blocks using abcjs SVG",
   "keywords": [
     "markdown-it",
