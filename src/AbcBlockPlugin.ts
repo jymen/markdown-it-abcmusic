@@ -1,4 +1,4 @@
-import MarkdownIt from 'markdown-it';
+import type MarkdownIt from 'markdown-it';
 import { AbcSvgRenderer } from './AbcSvgRenderer.js';
 
 export class AbcBlockPlugin {
@@ -50,8 +50,8 @@ export class AbcBlockPlugin {
 
     const abcSource = abcLines.join('\n');
     const svg = this.renderer.render(abcSource);
-
     const token = state.push('html_block', '', 0);
+    token.block = true;
     token.content = `<div class="abc-music">${svg}</div>\n`;
 
     state.line = nextLine + 1;

@@ -11,13 +11,12 @@
   "license": "MIT",
   "author": "Jean-Yves Mengant",
   "scripts": {
-    "build": "tsc",
+    "build": "npm version patch && vite build",
+    "dev": "npm run build && vite build --watch",
     "ci": "npm run build && npm run check-format && npm run test",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
-    "test": "vitest run",
-    "dev": "vitest",
-    "local-release": "changeset version && changeset publish",
+    "test": "vitest",
     "prepublishOnly": "npm run ci"
   },
   "repository": {
@@ -29,10 +28,19 @@
   ],
   "type": "module",
   "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "devDependencies": {
     "@types/jsdom": "^27.0.0",
     "prettier": "^3.7.4",
     "typescript": "^5.9.3",
+    "vite": "^7.3.0",
+    "vite-plugin-dts": "^4.5.4",
     "vitest": "^3.2.4"
   },
   "dependencies": {
