@@ -6,7 +6,7 @@ Render ABC music blocks in markdown using abcjs SVG.
 
 Write ABC music notation in your markdown:
 
-````markdown
+```markdown
 :::abc
 X:1
 T:Simple Melody
@@ -15,7 +15,7 @@ L:1/4
 K:C
 C D E F | G A B c |
 :::
-````
+```
 
 It renders as beautiful sheet music:
 
