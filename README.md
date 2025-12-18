@@ -2,8 +2,6 @@
 
 Render ABC music blocks in markdown using abcjs SVG.
 
-CAVEAT : CODE COMPLETE : debug and optimization in progress
-
 ## Usage
 
 ```ts
