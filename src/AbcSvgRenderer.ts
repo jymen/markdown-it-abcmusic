@@ -23,7 +23,6 @@ export class AbcSvgRenderer {
     paper.innerHTML = '';
 
     abcjs.renderAbc(paper, abcSource, {
-      responsive: 'resize',
       scale: 1.0,
     });
 
